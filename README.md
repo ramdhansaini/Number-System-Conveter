@@ -28,8 +28,8 @@ Tools: Android Studio
     <td><b>Home Screen</b></td>    <td><b>Conversion Example</b></td>
   </tr>
   <tr>
-    <td><img src="main/main_screen.png" width="250"></td>
-    <td><img src="main/conversion_result.png" width="250"></td>
-    <td><img src="main/conversion_result2.png" width="250"></td>
+    <td><img main="main_screen.png" width="250"></td>
+    <td><img main="conversion_result.png" width="250"></td>
+    <td><img main="conversion_result2.png" width="250"></td>
   </tr>
 </table>
