@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="20dp">
+
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Numbrix Converter"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <!-- Title -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <!-- From -->
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="From:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Input Box -->
+
+            <Spinner
+                android:id="@+id/spinnerFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:entries="@array/operations"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_input"
+            android:hint="Enter Value"
+            android:padding="12dp"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <!-- To -->
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="To:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:entries="@array/operations"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/result_bg"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="0"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- Detailed View -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Detailed View"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/binaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Binary: 0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/octalText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Octal: 0"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Keypad -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:columnCount="5">
+
+            <!-- Row 1 -->
+            <Button
+                android:id="@+id/but7"
+                style="@style/keypadBtn"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/but8"
+                style="@style/keypadBtn"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/but9"
+                style="@style/keypadBtn"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/butA"
+                style="@style/keypadHex"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/butB"
+                style="@style/keypadHex"
+                android:text="B" />
+
+            <!-- Row 2 -->
+            <Button
+                android:id="@+id/but4"
+                style="@style/keypadBtn"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/but5"
+                style="@style/keypadBtn"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/but6"
+                style="@style/keypadBtn"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/butC"
+                style="@style/keypadHex"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/butD"
+                style="@style/keypadHex"
+                android:text="D" />
+
+            <!-- Row 3 -->
+
+            <Button
+                android:id="@+id/but1"
+                style="@style/keypadBtn"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/but2"
+                style="@style/keypadBtn"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/but3"
+                style="@style/keypadBtn"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/butClear"
+                style="@style/keypadS"
+                android:text="*"
+                android:textColor="#D10606" />
+
+            <Button
+                android:id="@+id/butE"
+                style="@style/keypadHex"
+                android:text="E" />
+
+            <!-- Row 4 -->
+            <Button
+                android:id="@+id/butAC"
+                style="@style/keypadS"
+                android:text="AC"
+                android:textColor="#D10606" />
+
+            <Button
+                android:id="@+id/but0"
+                style="@style/keypadBtn"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/butDot"
+                style="@style/keypadS"
+                android:text="." />
+
+            <Button
+                android:id="@+id/butEqual"
+                style="@style/keypadEqual"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/butF"
+                style="@style/keypadHex"
+                android:text="F" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
