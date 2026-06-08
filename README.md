@@ -21,3 +21,15 @@ Language: Java
 UI Framework: Android XML (ConstraintLayout, GridLayout)
 Minimum SDK: API 24+
 Tools: Android Studio
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td><b>Home Screen</b></td>    <td><b>Conversion Example</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/main_screen.png" width="250"></td>
+    <td><img src="screenshots/conversion_result.png" width="250"></td>
+    <td><img src="screenshots/conversion_result2.png" width="250"></td>
+  </tr>
+</table>
