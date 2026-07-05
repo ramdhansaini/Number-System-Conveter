@@ -72,7 +72,11 @@ Hexadecimal| Octal
 - Digital Electronics
 - Programming practice
 - Data representation learning
-- Number system conversion 
+- Number system conversion
+
+📥 Download APK
+
+Download the latest APK from the [Releases](../../releases/latest) page.
 
 👨‍💻 Author
 
