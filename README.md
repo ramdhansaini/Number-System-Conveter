@@ -76,7 +76,7 @@ Hexadecimal| Octal
 
 📥 Download APK
 
-[⬇️ Download APK](https://github.com/ramdhansaini/Number-System-Conveter/releases/download/v1.0.1/app-debug.apk)
+[⬇️ Download APK](https://github.com/ramdhansaini/Number-System-Conveter/releases/download/v1.0.1/app-release.apk)
 
 👨‍💻 Author
 
