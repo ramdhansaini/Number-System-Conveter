@@ -1,35 +1,86 @@
-Numbrix Converter
+🔢 Number System Converter
 
-Numbrix Converter is a sleek and efficient Android application designed to perform real-time conversions between different number systems. Whether you are a student, a computer science professional, or a hobbyist, this tool makes base conversions effortless.
+A simple and efficient application that converts numbers between different numeral systems, including Binary, Decimal, Octal, and Hexadecimal. This project demonstrates the implementation of number system conversion algorithms with an easy-to-use interface.
 
-Features
+📖 Overview
 
-Real-time Conversion: Results update instantly as you type.
-Supported Bases:
-Binary (Base 2)
-Octal (Base 8)
-Decimal (Base 10)
-Hexadecimal (Base 16)
-Floating Point Support: Handles fractional/decimal numbers (e.g., converting 10.5 decimal to binary).
-Custom Keypad: Built-in hex-readykeypad (A-F) for faster input.
-Detailed View: View Binary and Octal representations simultaneously.
-Clean UI: Modern design using CardView, ConstraintLayout, and custom rounded backgrounds.
+The Number System Converter helps users quickly convert numbers from one base to another. It is useful for students, programmers, and anyone learning computer fundamentals or digital electronics.
 
-Tech Stack
+Supported number systems include:
 
-Language: Java
-UI Framework: Android XML (ConstraintLayout, GridLayout)
-Minimum SDK: API 24+
-Tools: Android Studio
-## 📸 Screenshots
+- Binary (Base-2)
+- Octal (Base-8)
+- Decimal (Base-10)
+- Hexadecimal (Base-16)
 
-<table>
-  <tr>
-    <td><b>Home Screen</b></td>    <td><b>Conversion Example</b></td>
-  </tr>
-  <tr>
-    <td><img src="app/src/main/main_screen.png" width="250"></td>
-    <td><img src="app/src/main/conversion_result.png" width="250"></td>
-    <td><img src="app/src/main/conversion_result2.png" width="250"></td>
-  </tr>
-</table>
+✨ Features
+
+- 🔄 Convert between Binary, Decimal, Octal, and Hexadecimal
+- ⚡ Fast and accurate conversions
+- 🖥️ Simple and user-friendly interface
+- 📚 Ideal for learning number systems
+- 💡 Lightweight and easy to use
+
+
+🛠️ Technologies Used
+
+  Android Studio
+  Java
+  XML
+  Android SDK
+  Material Design Components
+  View Binding
+
+📌 Supported Conversions
+
+From| To
+Binary| Decimal
+Binary| Octal
+Binary| Hexadecimal
+Decimal| Binary
+Decimal| Octal
+Decimal| Hexadecimal
+Octal| Binary
+Octal| Decimal
+Octal| Hexadecimal
+Hexadecimal| Binary
+Hexadecimal| Decimal
+Hexadecimal| Octal
+📍with floating valve 
+
+🧠 How It Works
+
+1. Select the input number system.
+2. Enter the number.
+3. Choose the target number system.
+4. Click Convert.
+5. The converted value is displayed instantly.
+
+---
+
+📷 Screenshots
+
+<p align="center">
+  <img src="screenshots/home.png" width="250"/>
+  <img src="screenshots/converter.png" width="250"/>
+  <img src="screenshots/result.png" width="250"/>
+</p>
+
+🎯 Applications
+
+- Computer Science education
+- Digital Electronics
+- Programming practice
+- Data representation learning
+- Number system conversion 
+
+👨‍💻 Author
+
+Ramdhan Saini
+
+GitHub: https://github.com/ramdhansaini
+
+
+⭐ Support
+
+If you found this project useful, please give it a ⭐ Star on GitHub. Your support helps improve and maintain the project.
