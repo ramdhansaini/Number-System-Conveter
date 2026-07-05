@@ -61,9 +61,9 @@ Hexadecimal| Octal
 📷 Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" width="250"/>
-  <img src="screenshots/converter.png" width="250"/>
-  <img src="screenshots/result.png" width="250"/>
+  <img src="app/src/main/main_screen.png.jpeg" width="250"/>
+  <img src="app/src/main/conversion_result.png.jpeg" width="250"/>
+  <img src="app/src/main/conversion_result2.png.jpeg" width="250"/>
 </p>
 
 🎯 Applications
